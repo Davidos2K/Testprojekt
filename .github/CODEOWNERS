@@ -1,0 +1,18 @@
+# Mit dieser Datei können bei Pull-Requests - sofern eine der Regeln zutrifft - automatisch Personen
+# als Reviewer zugeweisen werden. Diese bekommen dann per mail eine entsprechende Benachrichtigung.
+
+# Standard-Owner für alles, was unter nicht überschrieben wird:
+* @projekteignerin @Davidos2K
+
+# Zuweisen einer einzelnen Datei:
+README.md @schlumpfine
+
+# Zuweisen einer Dateiendung - würde obige README.md-Anweisung überschreiben:
+# *.md @schlaubi-schlumpf
+
+# Alles mit .html geht an ...
+*.html webmaster@website.de
+
+# Für jede Datei und jedes Unterverzeichnis im Verz "website" ist der User Eigentümer, egal, wo es sich befindet
+# mit Ausnahme von /doc/website oder /doc/sub/website.
+/website/ @webmaster
